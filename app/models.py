@@ -18,5 +18,12 @@ class Prediction(Base):
     created_at = Column(DateTime,
                         default=datetime.utcnow)
 
-engine = create_engine(os.getenv("DATABASE_URL"))
+# Build the connection string in code from a single plain secret.
+# DB_PASSWORD is a literal value with no ${...}, so bash, python-dotenv,
+# and systemd's EnvironmentFile all read it identically. Interpolating
+# ${DB_PASSWORD} inside .env would break under systemd, which does not
+# expand variables in an EnvironmentFile.
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DATABASE_URL = f"postgresql://pixelwise:{DB_PASSWORD}@localhost/pixelwise"
+engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
