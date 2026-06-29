@@ -1,0 +1,38 @@
+[33mdff8d47[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;33mtag: [m[1;33mv0.6[m[33m)[m Build DATABASE_URL in code from DB_PASSWORD (systemd EnvironmentFile safe)
+[33m7abcdeb[m Draw at 28x28 grid resolution in the frontend
+[33m0ff071e[m Serve frontend from /var/www/pixelwise instead of inside the repo
+[33me7eb703[m Provision Nginx and frontend in setup-server.sh
+[33m06075d8[m Add frontend drawing and classify script
+[33mcfee954[m Add frontend stylesheet
+[33mbd48b7b[m Add frontend HTML page
+[33m0a51e5d[m Add Nginx reverse proxy config
+[33m34d199d[m Define SessionLocal so the API can open DB sessions
+[33m28c7e5a[m Wiring API to the Database
+[33md263d3f[m add script dir variable
+[33m82eb71b[m add auto install pinned dependencies
+[33m7f21243[m add alchemy init and setup integration
+[33me3bc87a[m add alchemy packages
+[33mc2738f2[m fix syntax in setup script
+[33m8dd4648[m add postgresql installation and fix syntax
+[33m7241d55[m Provision PostgreSQL
+[33m9a75c5b[m[33m ([m[1;33mtag: [m[1;33mv0.4[m[33m)[m add --no-pager to systemctl status so script does not stop
+[33m077a777[m add systemctl start up to setup-server.sh
+[33m850a7b0[m add pixelwise service file
+[33ma65f879[m add ratelimit and api-key-auth through header
+[33mfbaeea5[m add API and pin needed libraries
+[33m8a08bef[m[33m ([m[1;33mtag: [m[1;33mv0.3[m[33m)[m add .pyc files to gitignore
+[33mf646cd2[m add classifier module to application pinned to model v1.0
+[33mc44423d[m add model path to .env.example
+[33m08666bd[m add pandas to requirements.txt
+[33m0c0714d[m add model loading to setup pipeline
+[33mc690650[m enter model repo and version path
+[33mcc78022[m[33m ([m[1;33mtag: [m[1;33mv0.2[m[33m)[m add .env.example and update gitignore
+[33m2bcc5bc[m freeze requirements
+[33m9620fdb[m freeze requirements
+[33m5dda701[m add .venv to gitignore
+[33mba75268[m Add server provisioning script
+[33m60721c8[m Add server provisioning script
+[33mdf6be89[m[33m ([m[1;33mtag: [m[1;33mv0.1[m[33m)[m Resolved merge conflict in readme
+[33mef72c0f[m add alternative line in readme
+[33mfa9cc8c[m Add a sentence to readme
+[33m7047ce6[m add project readme and gitignore

@@ -1,0 +1,5 @@
+scenario,n_ref,n_live,D,p,alpha,verdict
+no_drift,500,200,0.067,0.5253,0.05,OK
+mild_drift,500,200,0.734,0.0,0.05,DRIFT
+moderate_drift,500,200,0.938,0.0,0.05,DRIFT
+severe_drift,500,200,0.993,0.0,0.05,DRIFT
